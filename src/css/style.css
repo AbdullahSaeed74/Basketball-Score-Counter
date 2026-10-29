@@ -41,7 +41,7 @@ h1 {
     color: #f1f3f3;
 }
 
-.Home-Team-Score, .Guest-Team-Score {
+.Home-Team-Score, .Away-Team-Score {
     font-family:'Scoreboard' ;
     color: #f9455d;
     font-size: 30px;

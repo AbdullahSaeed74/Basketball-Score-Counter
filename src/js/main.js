@@ -1,7 +1,7 @@
 let homeTeamScore = 0
-let guestTeamScore = 0
+let awayTeamScore = 0
 homeTeamEl = document.getElementById("home-el")
-guestTeamEl = document.getElementById("guest-el")
+awayTeamEl = document.getElementById("away-el")
 leadingEl= document.getElementById("leading-el")
 
 function add1Home() {
@@ -24,42 +24,42 @@ function add3Home() {
     leading()
 }
 
-function add1Guest() {
-    guestTeamScore += 1
-    guestTeamEl.textContent = guestTeamScore
+function add1Away() {
+    awayTeamScore += 1
+    awayTeamEl.textContent = awayTeamScore
     leading()
 }
 
 
-function add2Guest() {
-    guestTeamScore += 2
-    guestTeamEl.textContent = guestTeamScore
+function add2Away() {
+    awayTeamScore += 2
+    awayTeamEl.textContent = awayTeamScore
     leading()
 }
 
 
-function add3Guest() {
-    guestTeamScore += 3
-    guestTeamEl.textContent = guestTeamScore
+function add3Away() {
+    awayTeamScore += 3
+    awayTeamEl.textContent = awayTeamScore
     leading()
 }
 
 function reset(){
     homeTeamScore = 0
-    guestTeamScore = 0
+    awayTeamScore = 0
     homeTeamEl.textContent = homeTeamScore
-    guestTeamEl.textContent = guestTeamScore
+    awayTeamEl.textContent = awayTeamScore
     leading()
 }
 
 function leading(){
-    if (homeTeamScore==guestTeamScore){
+    if (homeTeamScore==awayTeamScore){
         leadingEl.textContent = "The game is tied!"
     }
-    if (homeTeamScore>guestTeamScore){
+    if (homeTeamScore>awayTeamScore){
         leadingEl.textContent = "Home team in the lead!"
     }
-    if(homeTeamScore<guestTeamScore){
-        leadingEl.textContent = "Guest team in the lead!"
+    if(homeTeamScore<awayTeamScore){
+        leadingEl.textContent = "Away team in the lead!"
     }
 }
