@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Scoreboard' ;
+    src: url("../../fonts/CursedTimerUlil-Aznm.ttf");
+}
+
+body{
+    background-color: #182041;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.scoreboard{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background-color: #182041;
+    margin-bottom: 50px;
+}
+
+button{
+    font-family:'Scoreboard' ;
+    background-color: gray;
+    color:#747c9d;
+    padding: 5px 5px;
+    border: 1px 0px 0px #747c9d;
+    border-radius: 5px;
+    background-color: #182041;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f1f3f3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+#leading-el{
+    text-align: center;
+    color: #f1f3f3;
+}
+
+.Home-Team-Score, .Guest-Team-Score {
+    font-family:'Scoreboard' ;
+    color: #f9455d;
+    font-size: 30px;
+    background-color: black;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+
+}
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="./src/css/style.css">
+    </head>
+
+    <body>
+        <div class="scoreboard">
+
+        <div class="Home-Team">
+            <h1>HOME</h1>
+            <div class="Home-Team-Score">
+                <h2 id="home-el">0</h2>
+            </div>
+            <div>
+            <button id="score+1Home" onclick="add1Home()">+1</button>
+            <button id="score+2Home" onclick="add2Home()">+2</button>
+            <button id="score+3Home" onclick="add3Home()">+3</button>
+            </div>
+        </div>
+
+        <div class="Guest-Team">
+            <h1>GUEST</h1>
+            <div class="Guest-Team-Score">
+                <h2 id="guest-el">0</h2>
+            </div>
+            <button id="score+1Guest" onclick="add1Guest()">+1</button>
+            <button id="score+2Guest" onclick="add2Guest()">+2</button>
+            <button id="score+3Guest" onclick="add3Guest()">+3</button>
+            </div>
+        </div>
+
+        </div>
+        <p id="leading-el">No team has scored!</p>
+        <button id="reset-el" onclick="reset()">Reset</button>
+
+        <script src="./src/js/main.js"></script>
+
+    </body>
+
+</html>
